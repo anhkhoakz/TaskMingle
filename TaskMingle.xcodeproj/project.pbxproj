@@ -14,6 +14,13 @@
 		9DA62C0F2C132BF700E48C45 /* TaskMingleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA62C0E2C132BF700E48C45 /* TaskMingleTests.swift */; };
 		9DA62C192C132BF700E48C45 /* TaskMingleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA62C182C132BF700E48C45 /* TaskMingleUITests.swift */; };
 		9DA62C1B2C132BF700E48C45 /* TaskMingleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA62C1A2C132BF700E48C45 /* TaskMingleUITestsLaunchTests.swift */; };
+		9DA62C292C132C6D00E48C45 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA62C282C132C6D00E48C45 /* Task.swift */; };
+		9DA62C2B2C132F3100E48C45 /* TaskGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA62C2A2C132F3100E48C45 /* TaskGroup.swift */; };
+		9DA62C2D2C13305E00E48C45 /* TaskSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA62C2C2C13305E00E48C45 /* TaskSection.swift */; };
+		9DA62C2F2C13327600E48C45 /* StaticTaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA62C2E2C13327600E48C45 /* StaticTaskListView.swift */; };
+		9DA62C312C1334B500E48C45 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA62C302C1334B500E48C45 /* SidebarView.swift */; };
+		9DA62C332C13469600E48C45 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA62C322C13469600E48C45 /* TaskListView.swift */; };
+		9DA62C352C134A6C00E48C45 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA62C342C134A6C00E48C45 /* TaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +52,13 @@
 		9DA62C142C132BF700E48C45 /* TaskMingleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskMingleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DA62C182C132BF700E48C45 /* TaskMingleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskMingleUITests.swift; sourceTree = "<group>"; };
 		9DA62C1A2C132BF700E48C45 /* TaskMingleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskMingleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9DA62C282C132C6D00E48C45 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		9DA62C2A2C132F3100E48C45 /* TaskGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskGroup.swift; sourceTree = "<group>"; };
+		9DA62C2C2C13305E00E48C45 /* TaskSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskSection.swift; sourceTree = "<group>"; };
+		9DA62C2E2C13327600E48C45 /* StaticTaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticTaskListView.swift; sourceTree = "<group>"; };
+		9DA62C302C1334B500E48C45 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		9DA62C322C13469600E48C45 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
+		9DA62C342C134A6C00E48C45 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +110,15 @@
 			isa = PBXGroup;
 			children = (
 				9DA62BFC2C132BF500E48C45 /* TaskMingleApp.swift */,
+				9DA62C272C132C5900E48C45 /* Model */,
 				9DA62BFE2C132BF500E48C45 /* ContentView.swift */,
 				9DA62C002C132BF700E48C45 /* Assets.xcassets */,
 				9DA62C052C132BF700E48C45 /* TaskMingle.entitlements */,
 				9DA62C022C132BF700E48C45 /* Preview Content */,
+				9DA62C2E2C13327600E48C45 /* StaticTaskListView.swift */,
+				9DA62C322C13469600E48C45 /* TaskListView.swift */,
+				9DA62C302C1334B500E48C45 /* SidebarView.swift */,
+				9DA62C342C134A6C00E48C45 /* TaskView.swift */,
 			);
 			path = TaskMingle;
 			sourceTree = "<group>";
@@ -127,6 +146,16 @@
 				9DA62C1A2C132BF700E48C45 /* TaskMingleUITestsLaunchTests.swift */,
 			);
 			path = TaskMingleUITests;
+			sourceTree = "<group>";
+		};
+		9DA62C272C132C5900E48C45 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9DA62C282C132C6D00E48C45 /* Task.swift */,
+				9DA62C2A2C132F3100E48C45 /* TaskGroup.swift */,
+				9DA62C2C2C13305E00E48C45 /* TaskSection.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +288,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DA62C352C134A6C00E48C45 /* TaskView.swift in Sources */,
 				9DA62BFF2C132BF500E48C45 /* ContentView.swift in Sources */,
+				9DA62C292C132C6D00E48C45 /* Task.swift in Sources */,
+				9DA62C312C1334B500E48C45 /* SidebarView.swift in Sources */,
+				9DA62C2D2C13305E00E48C45 /* TaskSection.swift in Sources */,
+				9DA62C2B2C132F3100E48C45 /* TaskGroup.swift in Sources */,
 				9DA62BFD2C132BF500E48C45 /* TaskMingleApp.swift in Sources */,
+				9DA62C2F2C13327600E48C45 /* StaticTaskListView.swift in Sources */,
+				9DA62C332C13469600E48C45 /* TaskListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,8 +471,10 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = anhkhoakz.TaskMingle;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anhkhoakz.TaskMingle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -462,8 +500,10 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = anhkhoakz.TaskMingle;
+				PRODUCT_BUNDLE_IDENTIFIER = com.anhkhoakz.TaskMingle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
